@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rakesh Perchani — Senior Technical Engineer, Full-Stack .NET</title>
+<meta name="description" content="Rakesh Perchani — Senior Technical Engineer, Full-Stack .NET. Rakesh Perchani — Senior Full-Stack .NET Engineer and Technical Lead in Dubai. 16+ years delivering enterprise banking and web platforms with .NET, Angular and Azure.">
+<meta name="theme-color" content="#0F7B6C">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Rakesh Perchani — Senior Technical Engineer, Full-Stack .NET">
+<meta property="og:description" content="16+ years delivering enterprise .NET, Angular and Azure platforms. Dubai, UAE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5F7F4; --card:#FFFFFF; --ink:#14211C; --muted:#52645C; --line:#D5DED9; --accent:#0F7B6C; --accent-ink:#FFFFFF;
+  --head:"Bricolage Grotesque",system-ui,sans-serif; --body:"Source Serif 4",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#0F1714;--card:#16211D;--ink:#E9F0EC;--muted:#9BB0A6;--line:#2A3A34;--accent:#4FD1B8;--accent-ink:#0F1714}
+}
+:root[data-theme="dark"]{--paper:#0F1714;--card:#16211D;--ink:#E9F0EC;--muted:#9BB0A6;--line:#2A3A34;--accent:#4FD1B8;--accent-ink:#0F1714}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+header.nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.nav b{font-family:var(--head);font-size:1.05rem}
+.nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;font:500 .95rem var(--head);overflow-x:auto}
+.nav a{text-decoration:none;color:var(--muted);white-space:nowrap}
+.nav a:hover{color:var(--accent)}
+.hero{padding:72px 0 56px;display:grid;grid-template-columns:1fr 280px;gap:56px;align-items:center}
+.hero h1{font-size:clamp(3rem,8vw,5.5rem);font-weight:700;letter-spacing:-.03em}
+.role{font:500 1.25rem var(--head);color:var(--accent);margin:16px 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font:500 1rem var(--head);padding:12px 20px;border-radius:8px;border:1.5px solid var(--ink);text-decoration:none}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-1px)}
+.portrait{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:140px 140px 12px 12px;background:var(--line);display:block}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts div{padding:22px 24px 22px 0}
+.facts strong{display:block;font:700 1.5rem var(--head)}
+.facts span{color:var(--muted);font-size:.95rem}
+section{padding:80px 0 0}
+section>.wrap>h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:32px;letter-spacing:-.02em}
+.summary{max-width:68ch;font-size:1.2rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.skill{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.skill h3{font-size:1.1rem;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{font:500 .88rem var(--head);padding:5px 12px;border-radius:99px;border:1px solid var(--line);background:var(--paper)}
+.job{display:grid;grid-template-columns:200px 1fr;gap:32px;padding:28px 0;border-top:1px solid var(--line)}
+.job time{font:500 .95rem var(--head);color:var(--accent)}
+.job h3{font-size:1.35rem;margin-bottom:4px}
+.job .co{color:var(--muted);margin:0 0 12px}
+.job ul,.proj ul{margin:0;padding-left:1.2em;max-width:72ch}
+.job li,.proj li{margin-bottom:8px}
+details summary{cursor:pointer;font:500 1rem var(--head);color:var(--accent);margin-top:8px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:32px}
+.proj h3{font-size:1.6rem;margin:6px 0 4px}
+.proj .meta{color:var(--muted);margin:0 0 16px}
+.cred{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px}
+.cred h3{font-size:1.1rem;margin-bottom:12px;color:var(--accent)}
+.cred p{margin:0 0 14px}.cred small{color:var(--muted);display:block}
+.contact{margin-top:80px;padding:72px 0;background:var(--ink);color:var(--paper)}
+.contact h2{font-size:clamp(1.8rem,4vw,2.8rem);max-width:20ch;margin-bottom:28px}
+.contact .btn{border-color:var(--paper)}
+.contact .btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+footer{padding:24px 0;color:var(--muted);font-size:.9rem}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:40px}.portrait{max-width:240px}.job{grid-template-columns:1fr;gap:8px}.nav b{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <b>Rakesh Perchani</b>
+  <nav aria-label="Sections"><ul>
+    <li><a href="#profile">Profile</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li>
+    <li><a href="#credentials">Credentials</a></li><li><a href="#contact">Contact</a></li>
+  </ul></nav>
+</div></header>
+<main>
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <h1>Rakesh Perchani</h1>
+      <p class="role">Senior Technical Engineer · Full-Stack .NET</p>
+      <div class="btns">
+        <a class="btn main" href="mailto:rakesh_perchani@live.com">Email me</a>
+        <a class="btn" href="https://linkedin.com/in/rakesh-perchani">LinkedIn</a>
+        <a class="btn" href="tel:+971567734061">+971 56 773 4061</a>
+      </div>
+    </div>
+    <img class="portrait" src="profile.jpg" alt="Portrait of Rakesh Perchani">
+  </div>
+  <div class="facts">
+    <div><strong>16+ years</strong><span>Enterprise .NET delivery</span></div>
+    <div><strong>Dubai, UAE</strong><span>Based in the UAE</span></div>
+    <div><strong>Team of 7</strong><span>Engineers led in Agile/Scrum</span></div>
+    <div><strong>.NET · Angular · Azure</strong><span>Core stack</span></div>
+  </div>
+</div>
+<section id="profile"><div class="wrap"><h2>Summary</h2>
+<p class="summary">Senior full-stack .NET engineer and technical lead with 16+ years building enterprise applications for high-volume, transaction-critical systems. I lead teams of up to 7 engineers through Agile/Scrum delivery with C#, ASP.NET, .NET Core, Angular and TypeScript, plus Azure microservices and CI/CD pipelines. My work has delivered 20–35% gains in release speed, responsiveness and transaction reliability across Temenos core banking integrations, omni-channel platforms and API-first architectures. I work directly with business stakeholders and turn their requirements into technical roadmaps that non-technical teams can act on.</p></div></section>
+<section id="skills"><div class="wrap"><h2>Skills</h2><div class="skills">
+<div class="skill"><h3>Frontend</h3><ul class="chips"><li>Angular</li><li>TypeScript</li><li>ReactJS</li></ul></div>
+<div class="skill"><h3>Backend and APIs</h3><ul class="chips"><li>.NET / .NET Core</li><li>C#</li><li>ASP.NET MVC</li><li>REST APIs</li><li>Microservices</li></ul></div>
+<div class="skill"><h3>Cloud and delivery</h3><ul class="chips"><li>Azure</li><li>DevOps and CI/CD</li><li>Agile and Scrum</li></ul></div>
+<div class="skill"><h3>Data and domain</h3><ul class="chips"><li>SQL Server</li><li>NoSQL</li><li>Database optimization</li><li>Core Banking (Temenos)</li></ul></div>
+<div class="skill"><h3>Engineering practice</h3><ul class="chips"><li>Security and compliance</li><li>Performance tuning</li><li>Technical leadership</li><li>Mentoring</li></ul></div>
+</div></div></section>
+<section id="experience"><div class="wrap"><h2>Experience</h2><article class="job"><time>Mar 2022 – Present</time><div><h3>Technical Lead, .NET</h3><p class="co">Veripark · Dubai, UAE</p><ul><li>Delivered one banking experience across web, mobile and kiosk, cutting release cycle time by 25%. Led 7 engineers in Agile/Scrum, building Angular and TypeScript front ends on .NET back ends with CI/CD pipelines.</li><li>Cut post-release defects by 20% through structured code reviews, coding standards and hands-on mentoring.</li><li>Improved application response time by 30% by building .NET Core microservices on Azure and turning legacy .NET/C# components into API-first REST services.</li><li>Passed 3 compliance reviews in a row with zero critical findings by building authentication, encryption and audit controls into every release.</li></ul></div></article><article class="job"><time>Jun 2018 – Feb 2022</time><div><h3>Senior .NET Engineer</h3><p class="co">Veripark · Dubai, UAE</p><ul><li>Cut transaction processing latency by 35% by leading the Temenos core banking integration and building .NET Core REST APIs for high-volume workflows.</li><li>Reduced live-agent support volume by 20% by building a Microsoft Omnichannel Bot on Azure from concept to production.</li><li>Saved 5 hours a week of manual reporting with custom Angular and TypeScript BI dashboards.</li><li>Cut production incidents by 25% through root cause analysis and performance tuning.</li></ul></div></article><article class="job"><time>Jan 2015 – May 2018</time><div><h3>Senior Software Engineer</h3><p class="co">Digital Dividend</p><ul><li>Cut query response time by 30% by owning database schema design and query optimization.</li><li>Cut ramp-up time for new hires by 20% with structured knowledge-sharing sessions for junior developers.</li><li>Launched five client platforms on time, including Catablack Car and Delegia Meeting, using C#, ASP.NET MVC, ReactJS and REST APIs.</li></ul></div></article><article class="job"><time>Apr 2013 – Dec 2014</time><div><h3>Software Engineer</h3><p class="co">Digital Dividend</p><ul><li>Built and deployed enterprise web applications with C#, ASP.NET MVC and ReactJS for multiple client products.</li><li>Designed database architectures, stored procedures and indexing strategies that improved query performance.</li></ul><details><summary>Show more</summary><ul><li>Kept production stable through unit testing, debugging and refactoring, and managed deployments and monitoring on IIS.</li></ul></details></div></article><article class="job"><time>Nov 2011 – Mar 2013</time><div><h3>Software Engineer</h3><p class="co">Ora-Tech Systems</p><ul><li>Built and maintained a Driving License Management System with C#, ASP.NET MVC and SQL Server.</li><li>Built backend modules and fixed application issues to improve system stability.</li></ul><details><summary>Show more</summary><ul><li>Delivered feature updates driven by changing business and regulatory requirements.</li></ul></details></div></article><article class="job"><time>Mar 2010 – Oct 2011</time><div><h3>Application Developer</h3><p class="co">Micro Innovation and Technologies Pvt Ltd.</p><ul><li>Built and maintained a Hospital Management System with PHP and MySQL covering patient records, scheduling and administration.</li><li>Deployed PHP applications on Apache and fixed bugs and performance issues.</li></ul></div></article></div></section>
+<section id="credentials"><div class="wrap"><h2>Education, certifications and achievements</h2><div class="cred">
+<div><h3>Education</h3><p>Bachelor of Engineering in Software Engineering<small>Mehran University of Engineering &amp; Technology · 2010 · GPA 4.0</small></p><p>Intermediate in Pre-Engineering<small>Sindh Muslim Science College, Karachi · 2006</small></p></div>
+<div><h3>Certifications</h3><p>Microsoft Azure Fundamentals<small>Udemy</small></p><p>.NET Core Microservices<small>Udemy</small></p><p>Design Patterns in C# and .NET<small>Udemy</small></p><p>Master the Art of Writing Clean Code in C#<small>Udemy</small></p><p>Understanding TypeScript<small>Udemy</small></p></div>
+<div><h3>Achievements</h3><p>Silver Medalist<small>Mehran University of Engineering &amp; Technology</small></p><p>Certified Software Engineer, September 2012<small>IT Department, Government of Sindh</small></p><h3 style="margin-top:28px">Languages</h3><p>English, Urdu, Sindhi</p></div>
+</div></div></section>
+</main>
+<div class="contact" id="contact"><div class="wrap"><h2>Let's build something reliable together.</h2><div class="btns">
+<a class="btn main" href="mailto:rakesh_perchani@live.com">rakesh_perchani@live.com</a>
+<a class="btn" href="tel:+971567734061">+971 56 773 4061</a>
+<a class="btn" href="https://linkedin.com/in/rakesh-perchani">LinkedIn</a></div></div></div>
+<footer><div class="wrap">© 2026 Rakesh Perchani. Dubai, UAE.</div></footer>
+</body>
+</html>
